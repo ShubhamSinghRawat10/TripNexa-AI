@@ -1,0 +1,153 @@
+.sit-page { padding: 2rem 1.5rem 4rem; }
+
+.sit-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sit-emoji {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.sit-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.sit-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.sit-layout {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.sit-error {
+  margin-bottom: 1.5rem;
+}
+
+/* Results */
+.sit-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sit-score-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sit-score-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sit-score-info p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.sit-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sit-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sit-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sit-detail-icon {
+  font-size: 1.5rem;
+}
+
+.sit-detail-reason {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Price comparison */
+.price-comparison {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.price-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.price-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.price-arrow {
+  font-size: 1.5rem;
+}
+
+/* Savings */
+.sit-savings {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.08));
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.savings-big {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.sit-savings .savings-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.sit-savings .savings-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.sit-savings p {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .sit-detail-grid { grid-template-columns: 1fr; }
+  .sit-score-card { flex-direction: column; text-align: center; }
+}

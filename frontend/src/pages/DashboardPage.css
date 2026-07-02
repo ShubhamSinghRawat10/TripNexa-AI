@@ -1,0 +1,86 @@
+.dashboard { padding: 2rem 1.5rem 4rem; }
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.dashboard-header h1 { font-size: 1.8rem; }
+.text-secondary { color: var(--text-secondary); }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.quick-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.quick-action:hover { transform: translateY(-4px); }
+.qa-icon { font-size: 2rem; }
+.quick-action h3 { font-size: 1.1rem; }
+.quick-action p { font-size: 0.85rem; color: var(--text-secondary); }
+
+.trip-history h2 { margin-bottom: 1.5rem; }
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.trip-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.trip-card-header h3 { font-size: 1.1rem; }
+
+.trip-card-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.trip-detail { display: flex; flex-direction: column; gap: 0.25rem; }
+.detail-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.detail-value { font-size: 0.95rem; font-weight: 600; }
+
+.trip-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.empty-icon { font-size: 3rem; display: block; margin-bottom: 1rem; }
+.empty-state h3 { margin-bottom: 0.5rem; }
+.empty-state p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+.loading-state {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .trips-grid { grid-template-columns: 1fr; }
+}

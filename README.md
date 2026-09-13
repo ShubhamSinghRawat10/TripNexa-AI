@@ -6,7 +6,7 @@ Multi-agent, budget- and crowd-aware travel planning platform. The implementatio
 
 ## Current implementation
 
-- Spring Boot 3.5 / Java 25 backend with Maven Wrapper
+- Java 25 backend with Maven Wrapper
 - Flyway-managed PostgreSQL schema
 - Stateless JWT signup/login with BCrypt password hashing
 - Authenticated Trip create, history, read, update, and delete APIs
@@ -17,12 +17,6 @@ Multi-agent, budget- and crowd-aware travel planning platform. The implementatio
 ## Run locally
 
 Prerequisites: Java 25+ and PostgreSQL 17, or Docker for the provided database service.
-
-```powershell
-docker compose up -d postgres
-cd backend
-.\mvnw.cmd spring-boot:run
-```
 
 The API runs at `http://localhost:8080`; health is available at
 `GET /actuator/health`. Configuration can be overridden with the variables documented in

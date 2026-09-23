@@ -6,7 +6,7 @@ Multi-agent, budget- and crowd-aware travel planning platform. The implementatio
 
 ## Current implementation
 
-- Java 25 backend with Maven Wrapper
+- Java 25 backend with Maven Wrapperr
 - Flyway-managed PostgreSQL schema
 - Stateless JWT signup/login with BCrypt password hashing
 - Authenticated Trip create, history, read, update, and delete APIs
